@@ -85,8 +85,8 @@ class _OrderPageState extends State<OrderPage> {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                height: 40,
-                                width: 40,
+                                height: SizeConfig.calculateBlockHorizontal(40),
+                                width: SizeConfig.calculateBlockHorizontal(40),
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(35),
                                   color: Colors.red[900],
@@ -99,11 +99,11 @@ class _OrderPageState extends State<OrderPage> {
                                 ),
                               ),
                               Gap(SizeConfig.calculateBlockHorizontal(16)),
-                              const Text(
+                              Text(
                                 'Заказ №23',
                                 style: TextStyle(
-                                  color: Color(0xFF201A19),
-                                  fontSize: 22.0,
+                                  color: const Color(0xFF201A19),
+                                  fontSize: SizeConfig.calculateTextSize(22),
                                 ),
                               )
                             ],
@@ -126,13 +126,13 @@ class _OrderPageState extends State<OrderPage> {
                             ],
                           ),
                           Gap(SizeConfig.calculateBlockVertical(24)),
-                          const Row(
+                          Row(
                             children: [
                               Text(
                                 'Сумма заказа: 140 000 сум',
                                 style: TextStyle(
-                                  color: Color(0xFF534341),
-                                  fontSize: 14,
+                                  color: const Color(0xFF534341),
+                                  fontSize: SizeConfig.calculateTextSize(15),
                                   fontFamily: 'Martian Mono',
                                   fontWeight: FontWeight.w500,
                                   height: 1.43,
@@ -141,13 +141,13 @@ class _OrderPageState extends State<OrderPage> {
                             ],
                           ),
                           Gap(SizeConfig.calculateBlockVertical(34)),
-                          const Row(
+                          Row(
                             children: [
                               Text(
                                 '23.01.2023\n15:11',
                                 style: TextStyle(
                                   color: Colors.black,
-                                  fontSize: 11,
+                                  fontSize: SizeConfig.calculateTextSize(11),
                                   fontWeight: FontWeight.w500,
                                   height: 1.45,
                                 ),
@@ -172,8 +172,8 @@ class _OrderPageState extends State<OrderPage> {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                height: 40,
-                                width: 40,
+                                height: SizeConfig.calculateBlockHorizontal(40),
+                                width: SizeConfig.calculateBlockHorizontal(40),
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(35),
                                   color: Colors.red[900],
@@ -213,13 +213,13 @@ class _OrderPageState extends State<OrderPage> {
                             ],
                           ),
                           Gap(SizeConfig.calculateBlockVertical(24)),
-                          const Row(
+                          Row(
                             children: [
                               Text(
                                 'Сумма заказа: 140 000 сум',
                                 style: TextStyle(
-                                  color: Color(0xFF534341),
-                                  fontSize: 14,
+                                  color: const Color(0xFF534341),
+                                  fontSize: SizeConfig.calculateTextSize(15),
                                   fontFamily: 'Martian Mono',
                                   fontWeight: FontWeight.w500,
                                   height: 1.43,
@@ -228,13 +228,13 @@ class _OrderPageState extends State<OrderPage> {
                             ],
                           ),
                           Gap(SizeConfig.calculateBlockVertical(34)),
-                          const Row(
+                          Row(
                             children: [
                               Text(
                                 '23.01.2023\n15:11',
                                 style: TextStyle(
                                   color: Colors.black,
-                                  fontSize: 11,
+                                  fontSize: SizeConfig.calculateTextSize(11),
                                   fontWeight: FontWeight.w500,
                                   height: 1.45,
                                 ),
@@ -259,8 +259,8 @@ class _OrderPageState extends State<OrderPage> {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                height: 40,
-                                width: 40,
+                                height: SizeConfig.calculateBlockHorizontal(40),
+                                width: SizeConfig.calculateBlockHorizontal(40),
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(35),
                                   color: Colors.red[900],
@@ -300,13 +300,13 @@ class _OrderPageState extends State<OrderPage> {
                             ],
                           ),
                           Gap(SizeConfig.calculateBlockVertical(24)),
-                          const Row(
+                          Row(
                             children: [
                               Text(
                                 'Сумма заказа: 140 000 сум',
                                 style: TextStyle(
-                                  color: Color(0xFF534341),
-                                  fontSize: 14,
+                                  color: const Color(0xFF534341),
+                                  fontSize: SizeConfig.calculateTextSize(15),
                                   fontFamily: 'Martian Mono',
                                   fontWeight: FontWeight.w500,
                                   height: 1.43,
@@ -315,13 +315,13 @@ class _OrderPageState extends State<OrderPage> {
                             ],
                           ),
                           Gap(SizeConfig.calculateBlockVertical(34)),
-                          const Row(
+                          Row(
                             children: [
                               Text(
                                 '23.01.2023\n15:11',
                                 style: TextStyle(
                                   color: Colors.black,
-                                  fontSize: 11,
+                                  fontSize: SizeConfig.calculateTextSize(11),
                                   fontWeight: FontWeight.w500,
                                   height: 1.45,
                                 ),
@@ -346,8 +346,8 @@ class _OrderPageState extends State<OrderPage> {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                height: 40,
-                                width: 40,
+                                height: SizeConfig.calculateBlockHorizontal(40),
+                                width: SizeConfig.calculateBlockHorizontal(40),
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(35),
                                   color: Colors.red[900],
@@ -387,13 +387,13 @@ class _OrderPageState extends State<OrderPage> {
                             ],
                           ),
                           Gap(SizeConfig.calculateBlockVertical(24)),
-                          const Row(
+                          Row(
                             children: [
                               Text(
                                 'Сумма заказа: 140 000 сум',
                                 style: TextStyle(
-                                  color: Color(0xFF534341),
-                                  fontSize: 14,
+                                  color: const Color(0xFF534341),
+                                  fontSize: SizeConfig.calculateTextSize(15),
                                   fontFamily: 'Martian Mono',
                                   fontWeight: FontWeight.w500,
                                   height: 1.43,
@@ -402,13 +402,13 @@ class _OrderPageState extends State<OrderPage> {
                             ],
                           ),
                           Gap(SizeConfig.calculateBlockVertical(34)),
-                          const Row(
+                          Row(
                             children: [
                               Text(
                                 '23.01.2023\n15:11',
                                 style: TextStyle(
                                   color: Colors.black,
-                                  fontSize: 11,
+                                  fontSize: SizeConfig.calculateTextSize(11),
                                   fontWeight: FontWeight.w500,
                                   height: 1.45,
                                 ),

@@ -6,7 +6,7 @@ import 'package:zumda/features/splash/presentation/controller/splash_controller.
 class SplashPage extends StatefulWidget {
   SplashPage({super.key});
 
-  final _controller = Get.find<SplashController>();
+  final _controller = Get.put(SplashController());
 
   @override
   State<SplashPage> createState() => _SplashPageState();

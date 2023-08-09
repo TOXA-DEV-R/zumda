@@ -32,9 +32,9 @@ class ItemWidget extends StatelessWidget {
               const Gap(10),
               Text(
                 _firstTitle,
-                style: const TextStyle(
-                  color: Color(0xFF201A19),
-                  fontSize: 14,
+                style: TextStyle(
+                  color: const Color(0xFF201A19),
+                  fontSize: SizeConfig.calculateTextSize(14),
                   fontWeight: FontWeight.w500,
                   height: 1.43,
                 ),
@@ -43,9 +43,9 @@ class ItemWidget extends StatelessWidget {
           ),
           Text(
             _secondTitle,
-            style: const TextStyle(
+            style: TextStyle(
               color: Colors.black,
-              fontSize: 14,
+              fontSize: SizeConfig.calculateTextSize(14),
               fontWeight: FontWeight.w500,
               height: 1.43,
             ),

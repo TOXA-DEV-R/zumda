@@ -14,13 +14,15 @@ class SigninController extends GetxController {
   submit() {
     if (formKey.currentState!.validate()) {
       formKey.currentState!.save();
-      print(emailController.text);
-      print(passwordController.text);
       isLoading = true;
-      print(isLoading);
       update();
 
-      // Get.offNamed(AppRoutes.HOME);
+      Future.delayed(const Duration(seconds: 3), () {
+        Get.offNamed(AppRoutes.HOME);
+
+        isLoading = false;
+        update();
+      });
     }
   }
 
@@ -34,21 +36,5 @@ class SigninController extends GetxController {
     } else {
       return null;
     }
-  }
-
-  doSignInPage() {
-    String email = emailController.text.toString().trim();
-    String password = passwordController.text.toString().trim();
-    if (email.isEmpty || password.isEmpty) return;
-
-    isLoading = true;
-
-    Get.offNamed(AppRoutes.HOME);
-    update();
-  }
-
-  responseSignIn() {
-    isLoading = false;
-    update();
   }
 }
