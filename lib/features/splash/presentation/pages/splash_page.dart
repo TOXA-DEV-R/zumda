@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:zumda/app/app_images.dart';
-import 'package:zumda/app/app_routes.dart';
+import 'package:zumda/features/splash/presentation/controller/splash_controller.dart';
 
 class SplashPage extends StatefulWidget {
-  const SplashPage({super.key});
+  SplashPage({super.key});
+
+  final _controller = Get.find<SplashController>();
 
   @override
   State<SplashPage> createState() => _SplashPageState();
@@ -15,7 +17,7 @@ class _SplashPageState extends State<SplashPage> {
   Widget build(BuildContext context) {
     final double width = MediaQuery.of(context).size.width;
 
-    _navigateToHome();
+    widget._controller.navigateToHome();
 
     return SafeArea(
       child: Scaffold(
@@ -29,11 +31,5 @@ class _SplashPageState extends State<SplashPage> {
         ),
       ),
     );
-  }
-
-  _navigateToHome() {
-    Future.delayed(const Duration(seconds: 6), () {
-      Get.offNamed(AppRoutes.SINGIN);
-    });
   }
 }
